@@ -1,0 +1,11 @@
+f304227e89c41547f59dbea19993cdbe *DESCRIPTION
+b61c979043a5c8f10eeee1e9bb25ec72 *NAMESPACE
+898a8be424d1d0a0193cf16de5000f5e *NEWS.md
+fba8af547bda0553a689675a0fea85cc *R/geess.R
+a007be10bba35d8f7e119d090c76e2e4 *R/sqrtmat.R
+989606529a75104ad55e5375e40e207e *README.md
+cb3b20077bebc5da31fc1b46c657c0ff *build/partial.rdb
+22e81eef72a97abe624e756b868ce5ec *man/geess.Rd
+2cf37eb33761b16a3d51d17ff93d29aa *man/sqrtmat.Rd
+2ce0311a47a6c9d6a8166c100c36d3ba *tests/testthat.R
+b84403f28bc5205ed14a819ac41fd4be *tests/testthat/test_geess.R
