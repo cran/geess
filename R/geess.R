@@ -840,15 +840,15 @@ print.summary.geess <- function(x, digits = 3, ...) {
   print(x$coefficients, digits = digits)
 
   if (x$family$family != "gaussian" & x$family$link != "probit"){
-    coef <- x$coefficients[, c("Estimate", "Lower Limit", "Upper Limit")]
-    coef <- coef[toupper(row.names(coef)) != "(INTERCEPT)", ]
+    coef <- x$coefficients[, c("Estimate", "Lower Limit", "Upper Limit"),
+                           drop = FALSE]
+    coef <- coef[toupper(row.names(coef)) != "(INTERCEPT)", ,
+                 drop = FALSE]
     colnames(coef) <- c("Exp(coef)", "Lower Limit", "Upper Limit")
 
     cat("\nExp(coef) with", paste0(x$conf.level * 100, "%"),
         "Confidence Intervals", ":\n")
     print(exp(coef), digits = digits)
-  } else {
-
   }
 
   cat("\nEstimated Scale Parameter: ", format(round(x$scale, digits)))

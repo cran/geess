@@ -18,3 +18,7 @@
 # geess 1.0.1
 
 * Revised sqrtmat function
+
+# geess 1.0.2
+
+* Fixed errors in print.summary.geess
